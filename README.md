@@ -198,16 +198,17 @@ SGEMV() is a level2 function in BLAS library , the following description it take
 ## How to use the script
 
 The script will compiles and run the two programes and display the results , to use it First move to the script directory please:
- . If you have halide installed in your system and you can provide the path you can use the command:
+ . If you have build halide from sources in your system and you can provide the path you can use the command:
  ```bash
  ./script.sh -p <path_to_the_halide_directory>      # IMPORTANT:please do not include '\' at the end of the path 
+                                                    # if this does not work try -pb instead of -p
  ```
-. If you have halide installed in your system but you cannot provide the path you can directy use the command without any parameter, the script will try to find the path (this does not work in all cases):
+. If you have built halide from sources in your system but you cannot provide the path you can directy use the command without any parameter, the script will try to find the path (this does not work in all cases):
  ```bash
  ./script.sh 
  ```
  
-. Finally, if you don't have halide installed in you system you can use this command; it will download the important files to compile and run the program ( The global size is 223MB) :
+. Finally, if you don't have halide installed in you system or you have a binary release, you can use this command; it will download the important files to compile and run the program (The global size is 223MB) :
  ```bash
  ./script.sh -d 
  ```
