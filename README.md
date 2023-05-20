@@ -210,10 +210,10 @@ The script will compiles and run the two programes and display the results , to 
  
 . Finally, if you don't have halide installed in you system or you have a binary release, you can use this command; it will download some important files before compiling (The global size is 223MB) :
  ```bash
- ./script.sh -d 
+ ./script.sh -d    # use this option if any problem occurs in the previous ones
  ```
  
-  The script will also save the final results in files , and compare between them.
+  The script will also save the final results in files (in the directory called results) , and will compare between them.
  
  
 
