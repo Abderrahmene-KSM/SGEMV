@@ -208,7 +208,7 @@ The script will compiles and run the two programes and display the results , to 
  ./script.sh 
  ```
  
-. Finally, if you don't have halide installed in you system or you have a binary release, you can use this command; it will download the important files to compile and run the program (The global size is 223MB) :
+. Finally, if you don't have halide installed in you system or you have a binary release, you can use this command; it will download some important files before compiling (The global size is 223MB) :
  ```bash
  ./script.sh -d 
  ```
