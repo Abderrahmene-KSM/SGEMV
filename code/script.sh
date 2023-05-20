@@ -16,6 +16,12 @@ else
   fi    	
 fi
 
+if [[ $1 == "-pb" ]]; then
+  path="$2"
+  include_path="$path/include"
+  lib_path="$path/lib"
+  g++ SGEMV_halide.cpp -g -I "$include_path" -L  "$lib_path"  -lHalide  -lpthread -ldl -o SGEMV_halide -std=c++17
+fi
 
 
 if [ $? -eq 0 ]; then
